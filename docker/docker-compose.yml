@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  ubuntu_ssh:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "2222:22"  # Mapeamento da porta do host para o SSH
+      - "9870:9870" # Namenode
+      - "8088:8088" # Resource manager
+      - "9864:9864" # Datanode
+    restart: unless-stopped
+    volumes:
+      - ssh_volume:/home/glauco/.ssh
+      - hadoop_volume:/opt/hadoop
+      - tmp_volume:/opt/tmp
+      - logs_volume:/opt/logs
+      - staging_volume:/home/glauco/staging
+
+volumes:
+  ssh_volume:
+  hadoop_volume:
+  tmp_volume:
+  logs_volume:
+  staging_volume:

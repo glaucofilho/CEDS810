@@ -1,0 +1,18 @@
+<configuration>
+    <property>
+        <name>fs.defaultFS</name>
+        <value>hdfs://localhost:8020</value>
+    </property>
+    <property>
+        <name>io.file.buffer.size</name>
+        <value>131072</value>
+    </property>
+    <property>
+        <name>hadoop.http.staticuser.user</name>
+        <value>glauco</value>
+    </property>
+    <property>
+        <name>hadoop.user.group.static.mapping.overrides</name>
+        <value>glauco=supergroup</value>
+    </property>
+</configuration>
