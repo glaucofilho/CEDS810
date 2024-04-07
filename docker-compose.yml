@@ -2,9 +2,7 @@ version: '3.8'
 
 services:
   hadoop_docker:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: glaucolmf/ceds810-hadoop:v1
     network_mode: "host"
     restart: unless-stopped
     volumes:
