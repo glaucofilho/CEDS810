@@ -36,3 +36,7 @@ pyspark --master="spark://127.0.0.1:7077"
 http://localhost:4040
 
 stop-all-custom.sh
+
+
+
+hdfs dfs -copyFromLocal /home/glauco/staging/mallcustomers.csv /user/mallcustomers.csv
