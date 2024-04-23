@@ -42,3 +42,7 @@ stop-all-custom.sh
 hdfs dfs -copyFromLocal /home/glauco/staging/mallcustomers.csv /user/mallcustomers.csv
 
 hdfs dfs -copyFromLocal /home/glauco/staging/titanic.csv /user/titanic.csv
+
+hdfs dfs -copyFromLocal /home/glauco/staging/customer.csv /user/customer.csv
+
+hdfs dfs -copyFromLocal /home/glauco/staging/dt.svg /user/dt.svg
